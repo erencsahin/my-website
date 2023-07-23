@@ -23,11 +23,11 @@ section{
 }
 
 .btn{
-    margin-top: 1rem;
+    margin-top: 2rem;
     display: inline-block;
     padding: 2rem 3.75rem;
     border-radius: 30rem;
-    font-size: 1.7rem;
+    font-size: 2rem;
     background-color: #ffffff8f;
 }
 
@@ -38,6 +38,7 @@ html{
     scroll-padding-top: 9rem;
     scroll-behavior: smooth;
 }
+
 
 /* header start */
  
@@ -97,8 +98,8 @@ html{
 }
 
 .aboutme .content h3{
-    font-size: 5.5rem;
-    color: rgb(116, 97, 13);
+    font-size: 6.3rem;
+    color: rgb(160, 134, 19);
 }
 
 .aboutme .content p{
@@ -106,6 +107,64 @@ html{
     font-weight: 300;
     line-height: 1.8;
     padding: 1rem 0;
-    color:  rgb(116, 97, 13);
+    color:  rgb(160, 134, 19);
 }
 /* hakkımda end */
+
+/* öğrenim hayatım basladi*/
+
+.schoolexperiences .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+}
+.schoolexperiences .box-container .lise img{
+    width: 100%;
+    object-fit: cover;
+}
+.schoolexperiences .box-container .universite img{
+    width: 100%;
+    object-fit: cover;
+    height: 46rem;
+}
+
+.schoolexperiences .box-container .lise p{
+    color: rgb(160, 134, 19);
+    font-size: 24px;
+    margin-top: 16px;
+}
+.schoolexperiences .box-container .universite p{
+    color: rgb(160, 134, 19);
+    font-size: 24px;
+    margin-top: 16px;
+}
+
+.schoolexperiences .box-container .lise{
+    padding: 3rem;
+    background-color: #0c0e9c8f;
+    border-radius: 3%;
+    margin-right: 12px;
+}
+
+.schoolexperiences .box-container .universite{
+    margin-left: 12px;
+    padding: 3rem;
+    background-color: #0c0e9c8f;
+    border-radius: 3%;
+}
+.schoolexperiences h1{
+    font-size: 6.3rem;
+    color: rgb(160, 134, 19);
+}
+
+.box-container .lise .box-head .lise-foto-aciklama{
+    font-size: 18px;
+    color:rgb(160, 134, 19);
+    text-decoration: underline;
+}
+.box-container .universite .box-head .üniversite-foto-aciklama{
+    font-size: 18px;
+    color:rgb(160, 134, 19);
+    text-decoration: underline;
+}
+
+/* öğrenim hayatım bitti*/
