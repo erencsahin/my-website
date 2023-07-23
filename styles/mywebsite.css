@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root{
+    --main-color: #1047ad;
+    --black-color: #292814;
+    --border: 0.1rem solid rgba(255, 255 ,255 , 0,4);
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: full-width;
+    transition : 0.2s ease;
+}
+
+section{
+    padding: 3.5rem 7%;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 2rem 3.75rem;
+    border-radius: 30rem;
+    font-size: 1.7rem;
+    background-color: #ffffff8f;
+}
+
+/* base html codes */
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+/* header start */
+ 
+.header .logo img {
+    height: 10rem;
+    border-radius: 27%;
+    margin-top: 8px;
+}
+.header{
+    background-color: #ffffff8f;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    margin: 2rem 7%;
+    position: sticky;
+    top: 0;
+    border-radius: 30rem;
+    z-index: 500; /* bunun nedeni scroll aşağı gitse de headerim kaybolmasın(önüne bir şey geçmesin). */
+
+}
+
+.header .navbar a{
+    margin: 0.1rem;
+    font-size: 2rem;
+    border-bottom: 0.1rem solid transparent;
+    margin-left: 2.4rem;
+}
+
+.header .navbar:hover{
+    transform: scale(1.2);
+}
+
+.header .navbar a:hover{
+    border-color: aqua;
+    padding-bottom: 0.2rem;
+}
+
+
+.header .avatar{
+    font-size: 3.8rem;
+    cursor: pointer;
+}
+
+/* header end */
+
+/* hakkımda start */
+.aboutme{
+    min-height: 100vh;
+    margin-top: -14.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.aboutme .content{
+    max-width: 60rem;
+}
+
+.aboutme .content h3{
+    font-size: 5.5rem;
+    color: rgb(116, 97, 13);
+}
+
+.aboutme .content p{
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color:  rgb(116, 97, 13);
+}
+/* hakkımda end */
