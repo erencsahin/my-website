@@ -27,6 +27,7 @@ section{
 .btn:hover{
     background-color:aqua;
     color: rgb(228, 11, 55);
+    transform: scale(1.1109);
 }
 
 
@@ -39,9 +40,6 @@ section{
     font-size: 2rem;
     background-color: #ffffff8f;
     font-style: italic;
-}
-.btn:hover{
-    transform: scale(1.1109);
 }
 
 .heading{
@@ -76,7 +74,13 @@ html::-webkit-scrollbar-thumb{
     background-color: rgb(79, 55, 168);
     border-radius: 3rem;
 }
-
+p{
+    font-size: 2.4rem;
+}
+.title{
+    color: turquoise;
+    margin-left: 3rem;
+}
 
 /* header start */
  
@@ -101,7 +105,7 @@ html::-webkit-scrollbar-thumb{
 
 .header .navbar a{
     margin: 0.1rem;
-    font-size: 2rem;
+    font-size: 2.4rem;
     border-bottom: 0.1rem solid transparent;
     margin-left: 2.8rem;
 }
@@ -268,44 +272,58 @@ html::-webkit-scrollbar-thumb{
 
 
 /* Hobilerim başladı */
+.hobilerim .box-container .box .image{
+    margin-bottom: 4rem;
+}
+.hobilerim .box-container .box .fragman{
+    width: 48rem;
+    height: 60rem;
+    margin-bottom: 4.2rem;
+}
+/* .hobilerim .box-container .box .box-bottom .info{
+}
+ */
+
 
 .hobilerim .box-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
     gap: 1.5rem;
 }
 
-.hobilerim .box-container .hobi{
+.hobilerim .box-container .box{
     text-align: center;
     background-color: rgb(129, 141, 137);
     position: relative;
     border-radius: 3rem;
-    height: 600px;
     display: flex;
+    height: auto;
     flex-direction: column;
     justify-content: space-between;
-    padding: 3rem;
+    padding: 2.3rem;
 }
-
-.hobilerim .box-container .hobi-head{
+.hobilerim .box-container .box .box-head{
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
+    z-index: 10;
+}
+.hobilerim .box-container .box .box-head .title{
     font-size: 3rem;
     font-weight: bold;
+    text-align: center;
+    overflow-wrap: anywhere;
 }
-
-.hobilerim .box-container .hobi .obje{
-    position: absolute;
-    padding-top: 60%;
-    left: 50%;
-    width: 100%;
-    object-fit: cover;
-    transform: translate(-50%, -50%);
-}
-
-
 
 
 /* Hobilerim bitti */
+
+/* footer basladi */
+footer{
+    background-color: #646161;
+    text-align: center;
+
+}
+
+/* footer bitti */
