@@ -40,6 +40,7 @@ section{
     font-size: 2rem;
     background-color: #ffffff8f;
     font-style: italic;
+    font-weight: bold;
 }
 
 .heading{
@@ -316,14 +317,112 @@ p{
     overflow-wrap: anywhere;
 }
 
-
 /* Hobilerim bitti */
+
+/* iletisim başladı */
+.iletisim .row{
+    display: flex;
+    background-color: darkslategray;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.iletisim .row .map{
+    flex: 1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+}
+.iletisim .row form{
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.iletisim .row form h3{
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    color: white;
+}
+.iletisim .row form .inputBox{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    border: #646161 solid 1px;
+}
+
+.iletisim .row form .inputBox i{
+    color: #fff;
+    font-size: 3rem;
+    padding-left: 2rem;
+}
+.iletisim .row form .button{
+    margin-top: 2rem;
+    padding:2rem 3.75rem;
+    border-radius: 30rem;
+    font-size: 2rem;
+    background-color: #ffffff8f;
+    font-size: italic;
+    font-weight: bold;
+}
+.iletisim .row form .button:hover{
+    color: rgb(228, 11, 55);
+    transform: scale(1.1109);
+    cursor: pointer;
+}
+
+
+
+.iletisim .row form .inputBox input{
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.7rem;
+    text-transform: none;
+    background: none;
+}
+
+/* iletisim bitti */
+
 
 /* footer basladi */
 footer{
     background-color: #646161;
     text-align: center;
-
 }
+footer .search{
+    display: flex;
+    justify-content: center;
+}
+
+.search-input{
+    font-size: 1.6rem;
+    color: black;
+    padding: 0.8rem;
+    text-transform: none;
+    border-radius: 3rem;
+    height: 7rem;
+    margin-top: 1.1rem;
+}
+
+
+footer .search .btn{
+    background-color: turquoise;
+    padding: 1rem 2rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+footer .share{
+    padding: 2rem 0;
+}
+
+footer .share a{
+    width: 5rem;
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 36px;
+    margin: 3px;
+    color: black;
+    margin-left: 1.5rem;
+}
+
 
 /* footer bitti */
