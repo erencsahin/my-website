@@ -21,7 +21,7 @@
           alt="logo"
         />
       </a>
-      <nav class="navbar">
+      <nav class="navbar active">
         <a href="#aboutme" class="hakkımda">Hakkımda</a>
         <a href="#schoolexperiences" class="ogrenim-hayatim">Öğrenim Hayatım</a>
         <a href="#projelerim" class="projelerim"> Projelerim</a>
@@ -30,6 +30,7 @@
       </nav>
       <div class="avatar">
         <a href="#"><i class="bi bi-person"></i>
+        <a href="#"><i class="bi bi-list"></i></a>
       </a>
       </div>
     </header>
@@ -241,19 +242,19 @@
           <h3>Görüş ve Şikayetlerinizi burdaki formdan doldurabilirisiniz.</h3>
           <div class="inputBox">
             <i class="bi bi-person-fill"></i>
-            <input type="text" name="name" v-model="formData.name" placeholder="İsminiz">
+            <input type="text" name="name" v-model="formData.name" placeholder="İsminiz" autocomplete="off">
           </div>
           <div class="inputBox">
             <i class="bi bi-person-fill"></i>
-            <input type="text" name="surname" v-model="formData.surname" placeholder="Soyisminiz">
+            <input type="text" name="surname" v-model="formData.surname" placeholder="Soyisminiz" autocomplete="off">
           </div>
           <div class="inputBox">
             <i class="bi bi-envelope-fill"></i>
-            <input type="email" name="email" v-model="formData.email" placeholder="Mail Adresiniz">
+            <input type="email" name="email" v-model="formData.email" placeholder="Mail Adresiniz" autocomplete="off">
           </div>
           <div class="inputBox">
             <i class="bi bi-card-text"></i>
-            <input type="textarea" name="message" v-model="formData.message" placeholder="Görüşleriniz">
+            <input type="textarea" name="message" v-model="formData.message" placeholder="Görüşleriniz" autocomplete="off">
           </div>
           <button class="button" type="submit">Gönder</button>
           <button class="button" @click="clearForm">Temizle</button>
