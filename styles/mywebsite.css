@@ -43,6 +43,7 @@ section{
     font-weight: bold;
 }
 
+
 .heading{
     color:rgb(160, 134, 19);
     text-transform: uppercase;
@@ -55,7 +56,6 @@ section{
     font-style: italic;
     color: turquoise;
     text-transform: uppercase;
-
 }
 
 
@@ -285,49 +285,36 @@ p{
 
 
 /* Hobilerim başladı */
-.hobilerim .box-container .box .image{
-    margin-bottom: 4rem;
-}
-.hobilerim .box-container .box .fragman{
-    width: 48rem;
-    height: 60rem;
-    margin-bottom: 4.2rem;
-}
-/* .hobilerim .box-container .box .box-bottom .info{
-}
- */
-
-
-.hobilerim .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
-    gap: 1.5rem;
-}
-
-.hobilerim .box-container .box{
-    text-align: center;
-    background-color: rgb(129, 141, 137);
-    position: relative;
-    border-radius: 3rem;
+.movies{
+    width: 100%;
     display: flex;
-    height: auto;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 2.3rem;
-}
-.hobilerim .box-container .box .box-head{
-    display: flex;
+    flex-wrap: wrap;
+ }
+ .movies li{
+    flex: 1;
+    display:flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
-    z-index: 10;
-}
-.hobilerim .box-container .box .box-head .title{
-    font-size: 3rem;
-    font-weight: bold;
+    list-style: none;
+    margin:10px;
+    padding:15px;
+    border-radius: 12px;
     text-align: center;
-    overflow-wrap: anywhere;
-}
+    background:#272727;
+ }
+ 
+ .movies li img{
+    max-width: 300px;
+    border-radius: 12px;
+ }
+ 
+ .movies li h2{
+    color:#fff;
+    font-size: 1.8em;
+    padding:15px 10px 0;
+    margin-top: auto;
+    font-family: "Oswald",sans-serif;
+ }
 
 /* Hobilerim bitti */
 
