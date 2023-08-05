@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles/sehrim.css" />
+    <title>Nadide bir çiçek Darıca</title>
+  </head>
+  <body
+    background="images/replicate-prediction-246x4jrb3ieytcsjpknss2saaahd(1) - Kopya.jpg"
+  >
+    <header class="header">
+      <nav class="navbar">
+        <a href="#own-thinks" class="kendi-düsüncelerim">Kendi Düşüncelerim</a>
+        <a href="mywebsite.html" class="mainpage">Kişisel Sayfam</a>
+        <a href="mywebsite.html" class="photos">Görseller</a>
+        <a href="mywebsite.html" class="weather">Anlık Hava Durumu</a>
+      </nav>
+    </header>
+
+    <section class="own-thinks" id="own-thinks">
+      <div class="content">
+        <h3>Kendi Düşüncelerim</h3>
+        <p class="düsünce-paragraf">
+          Darıca benim büyüdüğüm yerdir. Genel olarak sahil kıyısı emekli ilçesi gibi,
+          kıyıdan uzak bölgeleri de sanayi çevreliyor. İlçemiz hayvanat bahçesi ve sahil
+          kısmı ile ünlü.    
+        </p>
+      </div>
+    </section>
+    <section class="photos" id="photos">
+      <div class="content">
+        <h3>Darıcaya Ait Bazı Fotoğraflar</h3>
+      
+        <div class="slider">
+          <div class="slide">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+
+            <div class="image first">
+              <img src="images/darıca1.jpeg" alt="">
+            </div>
+            <div class="img">
+              <img src="images/darıca2.jpeg" alt="">
+            </div>
+            <div class="img">
+              <img src="images/darıca3.jpeg" alt="">
+            </div>
+            <div class="img">
+              <img src="images/darıca4.jpg" alt="">
+            </div>
+
+            <div class="nav-auto">
+              <div class="a-b1"></div>
+              <div class="a-b2"></div>
+              <div class="a-b3"></div>
+              <div class="a-b4"></div>
+            </div>
+          </div>
+
+          <div class="nav m">
+            <label for="radio1" class="m-btn"></label>
+            <label for="radio1" class="m-btn"></label>
+            <label for="radio1" class="m-btn"></label>
+            <label for="radio1" class="m-btn"></label>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="weather">
+      <div class="content">
+        <h2>Hava Durumu</h2>
+        <div class="city">Darıca</div>
+        <div class="temp">15°C</div>
+        <div class="desc">Sıcak</div>
+        <div class="minmax">14/17</div>        
+      </div>
+    </section>
+
+
+    <script type="text/javascript">
+      var counter=1;
+      setInterval(function(){
+        document.getElementById('radio' + counter).checked=true;
+        counter++;
+        if (counter>4) {
+          counter = 1;
+        }
+      },2000)
+    </script>
+    <script src="havadurumu.js"></script>
+
+  </body>
+</html>
