@@ -1,6 +1,6 @@
 <?php
-$correctUsername='erencsahin0@gmail.com';
-$correctPassword='123456'; 
+$correctUsername='g211210088@ogr.sakarya.edu.tr';
+$correctPassword='g211210088'; 
 
 if (isset($_POST['username'])) {
     $username=$_POST['username'];
