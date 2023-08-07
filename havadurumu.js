@@ -28,6 +28,6 @@ function getWeatherData() {
       console.log("Hata:", error);
       cityElement.textContent = "Hava durumu verileri alınamadı.";
     });
-}
+  }
 
 getWeatherData();
